@@ -9,4 +9,6 @@ There are 6 currencies in the game that are used to buy buildings. You get these
 - Emerald Shards (0.000000008%)
 - Ruby Shards (0.000000000016%)
 - Mystical Shards (0.000000000000032%)
+
+
 Each currency is 500 times more rare than the last one. Every time a building gets its cps added, so there is a chance of you getting Mystical Shards in the late-game.
