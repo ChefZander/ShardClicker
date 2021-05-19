@@ -14,6 +14,7 @@ import me.chefzander.clickergame.buildings.Building;
 
 public class BuildingsMenu {
 	public static JFrame frame = new JFrame("Shard Clicker | by Zander_200 (Buildings)");
+	public static boolean loaded = false;
 	public static void initGUI() {
 		int sizeX = 700;
 		int sizeY = 500;
@@ -21,6 +22,7 @@ public class BuildingsMenu {
 		frame.setLocation((int)(screenSize.getWidth() / 2) -sizeX/2, (int)(screenSize.getHeight() / 2) -sizeY/2);
 		frame.setSize(sizeX, sizeY);
 		frame.setLayout(new GridLayout());
+		frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
 		JPanel main = new JPanel();
 		drawMoney(main);
 		if(ClickerGame.goldenShard > 0) {
@@ -39,6 +41,7 @@ public class BuildingsMenu {
 			drawMystic(main);
 		}
 		frame.add(main);
+		loaded = true;
 	}
 	public static void pushGUI() {
 		frame.setVisible(true);

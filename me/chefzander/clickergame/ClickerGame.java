@@ -83,7 +83,7 @@ public class ClickerGame {
 		buildings.setToolTipText("Click here to spend your money on useless stuff ^^");
 		buildings.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e){
-				BuildingsMenu.initGUI();
+				if(!BuildingsMenu.loaded) BuildingsMenu.initGUI();
 				BuildingsMenu.pushGUI();
 			}
 		});
