@@ -1,3 +1,6 @@
+# DISCONTINUED: CHECK: https://chefzander.itch.io/shardclicker
+
+
 # ShardClicker
 Clicker Game in Java
 
